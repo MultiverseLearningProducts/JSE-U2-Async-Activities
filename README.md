@@ -1,56 +1,57 @@
-# Personal Profile Project - Starter
+# Personal Profile Project - U2-1 Starter
 
-## Learning Objective
-Understand the fundamental building blocks of a Java program: the class, the main method, and variables.
+## Overview
+This is the starter branch for U2-1-solution. Your task is to complete the PersonalProfile implementation.
 
-## Your Task
-Create a new Java file named `PersonalProfile.java`. Inside, define a public class `PersonalProfile`. Within this class, create a public static void main(String[] args) method. Inside main, declare and initialize three variables: a String for your name, an int for your age, and a boolean to represent if you are a student. Print each variable to the console.
+## Task: Anatomy of a Java Class
+**Objective**: Understand the fundamental building blocks of a Java program: the class, the main method, and variables.
 
-## Project Structure
-Create the following directory structure:
-```
-personal-profile-project/
-├── src/
-│   └── main/
-│       └── java/
-│           └── PersonalProfile.java
-└── README.md
-```
+### Your Task
+Create a new Java file named `PersonalProfile.java` in the `src/main/java/` directory.
 
-## Requirements
-1. **Class Declaration**: Create a public class named `PersonalProfile`
-2. **Main Method**: Include `public static void main(String[] args)`
-3. **Variables**: Declare and initialize:
-   - `String name` - your name
-   - `int age` - your age
-   - `boolean isStudent` - whether you are a student
-4. **Output**: Print each variable to the console using `System.out.println()`
+Inside, define a public class `PersonalProfile`.
 
-## Expected Output Format
-```
-=== Personal Profile ===
-Name: [Your Name]
-Age: [Your Age]
-Student: [true/false]
-========================
-```
+Within this class, create a `public static void main(String[] args)` method.
 
-## Why This Matters
+Inside main, declare and initialize three variables:
+- A `String` for your name
+- An `int` for your age  
+- A `boolean` to represent if you are a student
+
+Print each variable to the console using `System.out.println()`.
+
+### Why This Matters
 Every line of Java code you write will live inside a class. This structure is the non-negotiable starting point for any Java application, big or small.
 
-## Getting Started
-1. Create the directory structure
-2. Create `PersonalProfile.java` in the correct location
-3. Implement the class with the required elements
-4. Compile and run your program
+## Testing Your Solution
+Once you've completed your PersonalProfile.java implementation, run the tests to verify your solution:
 
-## Compilation and Execution
 ```bash
-# Compile
-javac src/main/java/PersonalProfile.java
+# Compile the test framework
+javac src/test/java/*.java
 
-# Run
-java -cp src/main/java PersonalProfile
+# Run the tests
+java -cp src/test/java TestRunner
 ```
 
-Good luck with your first Java class!
+## Expected Output
+Your PersonalProfile.java should output something like:
+```
+Alex Johnson
+25
+true
+```
+
+## Success Criteria
+- ✅ PersonalProfile class exists and compiles
+- ✅ main method has correct signature
+- ✅ String, int, and boolean variables are declared
+- ✅ System.out.println is used for output
+- ✅ All tests pass
+
+## Next Steps
+After completing this task and passing all tests, you'll be ready for U2-2-solution (SimpleCalculator).
+
+---
+
+*This project is designed for educational purposes and follows Java best practices for beginners.*
