@@ -1,4 +1,4 @@
-# Personal Profile Project - U1-6 Solution
+# Personal Profile Project - U2-6 Solution
 
 ## Overview
 This project demonstrates the fundamental building blocks of Java programming through six key exercises:
@@ -110,13 +110,13 @@ This project serves as a comprehensive introduction to Java programming fundamen
 - **Best Practices**: Following Java conventions and coding standards
 
 ## Branch Structure
-- **U1-1-solution**: PersonalProfile only
-- **U1-1-starter**: Empty folder for learners
-- **U1-2-solution**: PersonalProfile + SimpleCalculator
-- **U1-3-solution**: PersonalProfile + SimpleCalculator + MessageGenerator
-- **U1-4-solution**: PersonalProfile + SimpleCalculator + MessageGenerator + SecurityCheck
-- **U1-5-solution**: PersonalProfile + SimpleCalculator + MessageGenerator + SecurityCheck + Repetition
-- **U1-6-solution**: All six classes (complete project)
+- **U2-1-solution**: PersonalProfile only
+- **U2-1-starter**: Empty folder for learners
+- **U2-2-solution**: PersonalProfile + SimpleCalculator
+- **U2-3-solution**: PersonalProfile + SimpleCalculator + MessageGenerator
+- **U2-4-solution**: PersonalProfile + SimpleCalculator + MessageGenerator + SecurityCheck
+- **U2-5-solution**: PersonalProfile + SimpleCalculator + MessageGenerator + SecurityCheck + Repetition
+- **U2-6-solution**: All six classes (complete project)
 
 ## Next Steps
 After completing this project, students will be ready to:
