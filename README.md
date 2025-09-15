@@ -1,10 +1,11 @@
-# Personal Profile Project - U1-3 Solution
+# Personal Profile Project - U1-4 Solution
 
 ## Overview
-This project demonstrates the fundamental building blocks of Java programming through three key exercises:
+This project demonstrates the fundamental building blocks of Java programming through four key exercises:
 1. **PersonalProfile.java** - Understanding class structure and variables
 2. **SimpleCalculator.java** - Practicing arithmetic operators and type casting
 3. **MessageGenerator.java** - Creating and using custom methods
+4. **SecurityCheck.java** - Using conditional logic and boolean operators
 
 ## Learning Objectives
 
@@ -26,6 +27,12 @@ This project demonstrates the fundamental building blocks of Java programming th
 - Understand the benefits of method organization
 - Practice calling methods and using return values
 
+### Task 4: The Security Check
+- Use if-else statements to control program flow
+- Understand boolean operators (&&, ||, !)
+- Learn conditional logic and decision-making
+- Practice complex condition evaluation
+
 ## Project Structure
 ```
 personal-profile-project/
@@ -34,7 +41,8 @@ personal-profile-project/
 │       └── java/
 │           ├── PersonalProfile.java
 │           ├── SimpleCalculator.java
-│           └── MessageGenerator.java
+│           ├── MessageGenerator.java
+│           └── SecurityCheck.java
 └── README.md
 ```
 
@@ -61,6 +69,13 @@ personal-profile-project/
 - **Method Calls**: Using methods from main method
 - **Code Organization**: Breaking problems into logical pieces
 
+### SecurityCheck.java
+- **If-Else Statements**: `if (condition) { } else if (condition) { } else { }`
+- **Boolean Operators**: `&&` (AND), `||` (OR), `!` (NOT)
+- **Conditional Logic**: `userAge >= 18 && hasID`
+- **Decision Making**: Dynamic program behavior based on conditions
+- **Edge Cases**: Testing boundary conditions (exactly 18 years old)
+
 ## How to Run
 
 ### Compile All Programs
@@ -78,53 +93,40 @@ java -cp src/main/java SimpleCalculator
 
 # Message Generator
 java -cp src/main/java MessageGenerator
+
+# Security Check
+java -cp src/main/java SecurityCheck
 ```
 
 ## Expected Output
 
-### PersonalProfile Output
+### SecurityCheck Output
 ```
-=== Personal Profile ===
-Name: Alex Johnson
-Age: 25
-Student: true
-========================
-```
+=== Security Check System ===
 
-### SimpleCalculator Output
-```
-=== Simple Calculator ===
-Number 1: 15
-Number 2: 4
+--- Scenario 1: Adult with ID ---
+Age: 25, Has ID: true
+Access Granted
 
-Sum: 15 + 4 = 19
-Product: 15 * 4 = 60
-Difference: 15 - 4 = 11
+--- Scenario 2: Adult without ID ---
+Age: 22, Has ID: false
+ID Check Required
 
-Integer Division: 15 / 4 = 3
-Notice: The decimal part is truncated in integer division!
-Double Division: (double) 15 / 4 = 3.75
-Notice: Type casting preserves the decimal precision!
-```
+--- Scenario 3: Minor with ID ---
+Age: 16, Has ID: true
+Access Denied
 
-### MessageGenerator Output
-```
-=== Message Generator Demo ===
+--- Scenario 4: Minor without ID ---
+Age: 17, Has ID: false
+Access Denied
 
-Welcome, Alice!
-Welcome, Bob!
-Welcome, Charlie!
+--- Scenario 5: Edge case - exactly 18 with ID ---
+Age: 18, Has ID: true
+Access Granted
 
-=== Additional Method Demonstrations ===
-Goodbye, Alice! Have a great day!
-Learning Java Programming in 2024!
-Hello Alice! You are 25 years old and work as a Student.
-
-=== Method Benefits ===
-1. Code Reusability: Write once, use many times
-2. Organization: Break large problems into small pieces
-3. Maintainability: Change code in one place
-4. Readability: Method names describe what they do
+--- Scenario 6: Edge case - exactly 18 without ID ---
+Age: 18, Has ID: false
+ID Check Required
 ```
 
 ## Why This Matters
@@ -138,10 +140,14 @@ Programs constantly perform calculations. Understanding how operators and data t
 ### Method Organization
 Methods are the key to organized programming. They let you break large problems into small, logical pieces and prevent you from writing the same code over and over again.
 
+### Decision-Making Logic
+Decision-making logic is the brain of any application. It allows your program to respond dynamically to different inputs and situations.
+
 ## Learning Progression
 - **U1-1**: Basic class structure and variables
 - **U1-2**: Arithmetic operations and type casting
 - **U1-3**: Method creation and code organization
+- **U1-4**: Conditional logic and decision-making
 - **Next**: More advanced Java concepts...
 
 This project provides a comprehensive foundation for understanding Java fundamentals!
