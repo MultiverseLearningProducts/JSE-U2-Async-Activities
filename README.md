@@ -1,15 +1,13 @@
-# Personal Profile Project
+# Personal Profile Project - Starter
 
-## Overview
-This project demonstrates the fundamental building blocks of a Java program: the class, the main method, and variables.
+## Learning Objective
+Understand the fundamental building blocks of a Java program: the class, the main method, and variables.
 
-## Learning Objectives
-- Understand the anatomy of a Java class
-- Learn how to declare and initialize variables
-- Practice using the main method as the entry point
-- Explore different data types (String, int, boolean)
+## Your Task
+Create a new Java file named `PersonalProfile.java`. Inside, define a public class `PersonalProfile`. Within this class, create a public static void main(String[] args) method. Inside main, declare and initialize three variables: a String for your name, an int for your age, and a boolean to represent if you are a student. Print each variable to the console.
 
 ## Project Structure
+Create the following directory structure:
 ```
 personal-profile-project/
 ├── src/
@@ -19,37 +17,40 @@ personal-profile-project/
 └── README.md
 ```
 
-## How to Run
-1. Compile the Java file:
-   ```bash
-   javac src/main/java/PersonalProfile.java
-   ```
+## Requirements
+1. **Class Declaration**: Create a public class named `PersonalProfile`
+2. **Main Method**: Include `public static void main(String[] args)`
+3. **Variables**: Declare and initialize:
+   - `String name` - your name
+   - `int age` - your age
+   - `boolean isStudent` - whether you are a student
+4. **Output**: Print each variable to the console using `System.out.println()`
 
-2. Run the program:
-   ```bash
-   java -cp src/main/java PersonalProfile
-   ```
-
-## Expected Output
+## Expected Output Format
 ```
 === Personal Profile ===
-Name: Alex Johnson
-Age: 25
-Student: true
+Name: [Your Name]
+Age: [Your Age]
+Student: [true/false]
 ========================
-
-Variable Details:
-- Name is a String: String
-- Age is an int: Integer
-- Student status is a boolean: Boolean
 ```
-
-## Key Concepts Demonstrated
-- **Class Declaration**: `public class PersonalProfile`
-- **Main Method**: `public static void main(String[] args)`
-- **Variable Declaration**: `String name = "Alex Johnson";`
-- **Data Types**: String, int, boolean
-- **Console Output**: `System.out.println()`
 
 ## Why This Matters
 Every line of Java code you write will live inside a class. This structure is the non-negotiable starting point for any Java application, big or small.
+
+## Getting Started
+1. Create the directory structure
+2. Create `PersonalProfile.java` in the correct location
+3. Implement the class with the required elements
+4. Compile and run your program
+
+## Compilation and Execution
+```bash
+# Compile
+javac src/main/java/PersonalProfile.java
+
+# Run
+java -cp src/main/java PersonalProfile
+```
+
+Good luck with your first Java class!
