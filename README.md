@@ -1,11 +1,12 @@
-# Personal Profile Project - U1-4 Solution
+# Personal Profile Project - U1-5 Solution
 
 ## Overview
-This project demonstrates the fundamental building blocks of Java programming through four key exercises:
+This project demonstrates the fundamental building blocks of Java programming through five key exercises:
 1. **PersonalProfile.java** - Understanding class structure and variables
 2. **SimpleCalculator.java** - Practicing arithmetic operators and type casting
 3. **MessageGenerator.java** - Creating and using custom methods
 4. **SecurityCheck.java** - Using conditional logic and boolean operators
+5. **Repetition.java** - Learning for and while loops for automation
 
 ## Learning Objectives
 
@@ -33,6 +34,12 @@ This project demonstrates the fundamental building blocks of Java programming th
 - Learn conditional logic and decision-making
 - Practice complex condition evaluation
 
+### Task 5: The Repetition Engine
+- Use for loops to automate repetitive actions
+- Use while loops for condition-based repetition
+- Learn loop control and counter management
+- Understand when to use different loop types
+
 ## Project Structure
 ```
 personal-profile-project/
@@ -42,7 +49,8 @@ personal-profile-project/
 │           ├── PersonalProfile.java
 │           ├── SimpleCalculator.java
 │           ├── MessageGenerator.java
-│           └── SecurityCheck.java
+│           ├── SecurityCheck.java
+│           └── Repetition.java
 └── README.md
 ```
 
@@ -76,6 +84,13 @@ personal-profile-project/
 - **Decision Making**: Dynamic program behavior based on conditions
 - **Edge Cases**: Testing boundary conditions (exactly 18 years old)
 
+### Repetition.java
+- **For Loops**: `for (int i = 1; i <= 10; i++)` - Fixed iterations
+- **While Loops**: `while (counter < 5)` - Condition-based repetition
+- **Loop Control**: Counter initialization, condition checking, incrementing
+- **Mathematical Operations**: Calculating squares, sums, factorials
+- **Data Processing**: Iterating through arrays and lists
+
 ## How to Run
 
 ### Compile All Programs
@@ -96,37 +111,41 @@ java -cp src/main/java MessageGenerator
 
 # Security Check
 java -cp src/main/java SecurityCheck
+
+# Repetition Engine
+java -cp src/main/java Repetition
 ```
 
 ## Expected Output
 
-### SecurityCheck Output
+### Repetition Output
 ```
-=== Security Check System ===
+=== The Repetition Engine ===
 
---- Scenario 1: Adult with ID ---
-Age: 25, Has ID: true
-Access Granted
+--- Task 1: Squares of Numbers 1 to 10 (For Loop) ---
+Printing squares using for loop:
+Square of 1 = 1
+Square of 2 = 4
+Square of 3 = 9
+Square of 4 = 16
+Square of 5 = 25
+Square of 6 = 36
+Square of 7 = 49
+Square of 8 = 64
+Square of 9 = 81
+Square of 10 = 100
 
---- Scenario 2: Adult without ID ---
-Age: 22, Has ID: false
-ID Check Required
+Squares in a single line: 
+1 4 9 16 25 36 49 64 81 100 
 
---- Scenario 3: Minor with ID ---
-Age: 16, Has ID: true
-Access Denied
-
---- Scenario 4: Minor without ID ---
-Age: 17, Has ID: false
-Access Denied
-
---- Scenario 5: Edge case - exactly 18 with ID ---
-Age: 18, Has ID: true
-Access Granted
-
---- Scenario 6: Edge case - exactly 18 without ID ---
-Age: 18, Has ID: false
-ID Check Required
+--- Task 2: Counter Process (While Loop) ---
+Simulating a process with while loop:
+Process step 1 - Counter value: 0
+Process step 2 - Counter value: 1
+Process step 3 - Counter value: 2
+Process step 4 - Counter value: 3
+Process step 5 - Counter value: 4
+Process completed! Final counter value: 5
 ```
 
 ## Why This Matters
@@ -143,11 +162,15 @@ Methods are the key to organized programming. They let you break large problems 
 ### Decision-Making Logic
 Decision-making logic is the brain of any application. It allows your program to respond dynamically to different inputs and situations.
 
+### Loop Automation
+Loops are workhorses. They are essential for everything from processing lists of data (like transactions in your budget app) to running animations and game engines.
+
 ## Learning Progression
 - **U1-1**: Basic class structure and variables
 - **U1-2**: Arithmetic operations and type casting
 - **U1-3**: Method creation and code organization
 - **U1-4**: Conditional logic and decision-making
+- **U1-5**: Loop automation and repetition
 - **Next**: More advanced Java concepts...
 
 This project provides a comprehensive foundation for understanding Java fundamentals!
